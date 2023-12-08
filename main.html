@@ -5,36 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="style1.css">
-  <script src="main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Document</title>
 </head>
 <body>
-  <header>
+  <header class="container text-center mt-3">
     <h1>МКР 2</h1>
     <h2>Камиш Артем</h2>
   </header>
-  <h2>Завдання</h2>
-  <div>1.	Адаптивність - Bootstrap
-    <br>2.Створити клас людина, що має ім'я (рядок), вік, вагу при введенні значення повинні перевірятися. Створити дочірній клас - повнолітній, що має номер паспорта. Створити метод, який перевіряє чи дійсно дана людина є повнолітньою.
-    <br>3.Передбачити на сторінці поля для введення інформації та елементи для виведення інформації.
-    <br>4.Результати роботи Javascript необхідно вивести на веб сторінку
+  <div class="container mt-3">
+    <h2>Завдання</h2>
+    <div class="alert alert-dark">
+      <p>1. Адаптивність - Bootstrap</p>
+      <p>2. Створити клас людина, що має ім'я (рядок), вік, вагу при введенні значення повинні перевірятися. Створити дочірній клас - повнолітній, що має номер паспорта. Створити метод, який перевіряє чи дійсно дана людина є повнолітньою.</p>
+      <p>3. Передбачити на сторінці поля для введення інформації та елементи для виведення інформації.</p>
+      <p>4. Результати роботи Javascript необхідно вивести на веб сторінку</p>
     </div>
-  <h2>Завдання №2-3</h2>
-  <div>
-    <label for="personName">Ім'я:</label>
-    <input type="text" id="personName" placeholder="Ім'я">
-    <br>
-    <label for="personAge">Вік:</label>
-    <input type="number" id="personAge" placeholder="Вік">
-    <br>
-    <label for="personWeight">Вага:</label>
-    <input type="number" id="personWeight" placeholder="Вага">
-    <br>
-    <label for="passportNumber">Номер паспорта:</label>
-    <input type="text" id="passportNumber" placeholder="Номер паспорта">
-    <br>
-    <button id="verifyAdult" onclick="verifyAdult()">Перевірити повноліття</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Завдання №2-3</h2>
+        <div>
+          <label for="personName">Ім'я:</label>
+          <input type="text" id="personName" placeholder="Ім'я">
+          <br>
+          <label for="personAge">Вік:</label>
+          <input type="number" id="personAge" placeholder="Вік">
+          <br>
+          <label for="personWeight">Вага:</label>
+          <input type="number" id="personWeight" placeholder="Вага">
+          <br>
+          <label for="passportNumber">Номер паспорта:</label>
+          <input type="text" id="passportNumber" placeholder="Номер паспорта">
+          <br>
+          <button id="verifyAdult" onclick="verifyAdult()">Перевірити повноліття</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="adultResult"></div>
+      </div>
+    </div>
   </div>
-  <div id="adultResult"></div>
+  <script src="main.js"></script>
 </body>
 </html>
