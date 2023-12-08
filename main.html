@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="style1.css">
+  <script src="main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>МКР 2</h1>
+    <h2>Камиш Артем</h2>
+  </header>
+  <h2>Завдання</h2>
+  <div>1.	Адаптивність - Bootstrap
+    <br>2.Створити клас людина, що має ім'я (рядок), вік, вагу при введенні значення повинні перевірятися. Створити дочірній клас - повнолітній, що має номер паспорта. Створити метод, який перевіряє чи дійсно дана людина є повнолітньою.
+    <br>3.Передбачити на сторінці поля для введення інформації та елементи для виведення інформації.
+    <br>4.Результати роботи Javascript необхідно вивести на веб сторінку
+    </div>
+  <h2>Завдання №2-3</h2>
+  <div>
+    <label for="personName">Ім'я:</label>
+    <input type="text" id="personName" placeholder="Ім'я">
+    <br>
+    <label for="personAge">Вік:</label>
+    <input type="number" id="personAge" placeholder="Вік">
+    <br>
+    <label for="personWeight">Вага:</label>
+    <input type="number" id="personWeight" placeholder="Вага">
+    <br>
+    <label for="passportNumber">Номер паспорта:</label>
+    <input type="text" id="passportNumber" placeholder="Номер паспорта">
+    <br>
+    <button id="verifyAdult" onclick="verifyAdult()">Перевірити повноліття</button>
+  </div>
+  <div id="adultResult"></div>
+</body>
+</html>
